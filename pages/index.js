@@ -51,14 +51,14 @@ export default function Home() {
           <link rel="icon" href="/favicon.png" />
         </Head>
 
-            {
+            {/* {
               status !== "loading" ? (
                 <div>
                 {
                   !session ? 
                   (<Login />) 
                   : 
-                  (
+                  ( */}
                     <MainContainer> 
                       <Container>
                           <NavContainer>
@@ -92,7 +92,9 @@ export default function Home() {
                                     </li>
                                   </a>
                                   <li className="center">
-                                    <Avatar className="Avatar" src={session.user.image} onClick={signOut} />
+                                    <Avatar className="Avatar" 
+                                    // src={session.user.image} onClick={signOut} 
+                                    />
                                   </li>
                                   </ul>
                                   
@@ -142,11 +144,11 @@ export default function Home() {
                       </SubMainContainer>
 
                   </MainContainer>  
-                  )
+                  {/* )
                 }
                 </div>
               ) : (<Loading />)
-            }
+            } */}
             
     </ThemeProvider>
   )
